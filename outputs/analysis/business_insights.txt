@@ -1,0 +1,68 @@
+E-COMMERCE BUSINESS INSIGHTS
+========================================
+
+REPORTING SCOPE
+All order statuses
+Dataset: synthetic learning data.
+Amounts are reported in source currency units.
+
+OBSERVED FINDINGS
+Total recorded revenue: 5,284,387.70
+Total recorded profit: 1,437,638.31
+Unique orders analyzed: 10,000
+Average order value: 528.44
+Overall profit margin: 27.21%
+Highest-revenue region: Middle East (1,348,593.22).
+Highest total-profit category: Electronics (925,448.15).
+Highest-revenue product: Lenovo ThinkPad X1 (379,258.55).
+Highest recorded monthly revenue: 2023-10 (243,996.98).
+Most-used payment method by distinct orders: Debit Card (1,486 orders).
+Cancelled orders across all records: 908
+Returned orders across all records: 1,857
+Pearson correlation between row discount and row profit: -0.254.
+Correlation does not establish causation.
+
+TOP CUSTOMERS BY REVENUE
+customer_id   revenue   profit  unique_orders  quantity  profit_margin_pct
+ CUST-01046 20,094.80 8,736.84              2        11              43.48
+ CUST-02471 20,064.82 3,537.88              4        17              17.63
+ CUST-06024 19,700.13 9,054.82              5        14              45.96
+ CUST-04179 16,901.36 9,144.15              1         7              54.10
+ CUST-03717 16,567.88 4,902.56              2        10              29.59
+ CUST-05654 15,482.04 6,818.93              3        10              44.04
+ CUST-04026 14,898.21 5,810.94              2         8              39.00
+ CUST-05700 14,067.20 4,795.97              3        10              34.09
+ CUST-07378 13,464.60   714.12              2        11               5.30
+ CUST-03852 13,398.93 6,373.05              1         6              47.56
+
+LOWEST TOTAL-PROFIT PRODUCTS
+                product   revenue   profit  unique_orders  quantity  profit_margin_pct
+ Thinking Fast and Slow 10,353.83 2,772.83            189       504              26.78
+The Psychology of Money 11,335.81 2,951.70            203       590              26.04
+              Deep Work 11,996.11 3,015.08            206       576              25.13
+      Rich Dad Poor Dad 11,462.37 3,049.67            213       569              26.61
+          Atomic Habits 12,181.12 3,403.63            211       580              27.94
+        Classic T-Shirt 15,792.03 4,403.26            118       307              27.88
+       Whey Protein 2kg 18,399.26 4,639.78            192       488              25.22
+         Slim Fit Jeans 18,256.18 4,707.26            121       343              25.78
+            Chino Pants 18,640.64 4,920.75            129       362              26.40
+             Vitamin D3 19,874.70 5,039.37            200       504              25.36
+
+RECOMMENDATIONS FOR INVESTIGATION
+Review pricing and costs for the lowest-profit products.
+Compare discount bands within similar products or categories.
+Investigate cancellation and return reasons before proposing fixes.
+Check date coverage before interpreting monthly changes.
+
+ASSUMPTIONS AND LIMITATIONS
+The source Revenue column is treated as recorded sales.
+Recorded sales already reflect discounts; do not discount them again.
+Discount is a rate: 0.10 represents 10%.
+Customers are identified by Customer_ID; names are unavailable.
+Average order value uses distinct Order_ID values.
+Main revenue and profit totals include all order statuses.
+These totals are not delivered-only or refund-adjusted results.
+Negative profit values are retained for profitability analysis.
+Lowest total profit does not necessarily mean a product has a negative profit or the lowest profit margin.
+Status counts cover all records. A multi-status order can appear in more than one status group.
+Payment usage counts orders using each method; multi-method orders may appear in multiple groups.

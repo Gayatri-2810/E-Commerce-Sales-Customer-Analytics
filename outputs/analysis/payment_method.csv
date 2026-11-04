@@ -1,0 +1,8 @@
+﻿payment_method,unique_orders
+Debit Card,1486
+PayPal,1470
+Credit Card,1430
+Bank Transfer,1426
+Google Pay,1422
+Cash on Delivery,1414
+Apple Pay,1352

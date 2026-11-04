@@ -1,0 +1,34 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Local environment variables
+.env
+.env.*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.log
+~$*
+
+# Source data: download from the documented source
+data/raw/*.csv
+data/raw/*.zip
